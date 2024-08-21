@@ -1,0 +1,89 @@
+:root {
+    --primary-darkcyan: hsl(158, 36%, 37%);
+    --primary-cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    height: calc(100vh - 1px);
+    display: flex;
+    background-color: var(--primary-cream);
+}
+
+.container {
+    display: flex;
+    width: 800px; /* 固定宽度 */
+    height: 570px; /* 固定高度 */
+    margin: auto; /* 使容器居中 */
+    /* border-radius: 20px; */
+    flex-direction: row;
+    /* border: 1px solid; */
+    
+    /* transition: all 0.3s ease;
+    background-color: var(--neutral-white);
+    border-radius: 20px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 8px 8px 0 0 rgba(0, 0, 0, 1);
+    border: 1px solid var(--neutral-black); */
+    
+}
+
+.image-section {
+    flex: 1; /* 使图片部分占一半宽度 */
+    background-color: #f0f0f0; /* 背景色，可选 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-section > img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* 确保图片覆盖整个区域 */
+    border-radius: 20px 0 0 20px;
+}
+
+.text-section {
+    flex: 1; /* 使文字部分占一半宽度 */
+    padding: 20px;
+    background-color: #ffffff; /* 背景色，可选 */
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    border-radius: 0 20px 20px 0;
+}
+
+.text-section p {
+    /* font-size: 16px; */
+    line-height: 1.6;
+    margin: 5px;
+}
+
+.des1 {
+    margin: 0px;
+    font-size: 50px;
+}
+
+.price {
+    text-align: center;
+    flex-direction: row;
+    color: var(--primary-darkcyan);
+    font-size: 30px;
+}
+
+.price2 {
+    color: black;
+    font-size: 14px;
+}
+
+.button {
+    border-radius: 4px;
+    padding: 4px 12px 4px 12px;
+}
+
