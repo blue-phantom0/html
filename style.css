@@ -1,5 +1,6 @@
 :root {
     --primary-darkcyan: hsl(158, 36%, 37%);
+    --primary-dcyan:hsl(158, 36%, 20%);
     --primary-cream: hsl(30, 38%, 92%);
     --Very-dark-blue: hsl(212, 21%, 14%);
     --Dark-grayish-blue: hsl(228, 12%, 48%);
@@ -19,9 +20,10 @@ body {
     width: 800px; /* 固定宽度 */
     height: 570px; /* 固定高度 */
     margin: auto; /* 使容器居中 */
-    /* border-radius: 20px; */
+    border-radius: 20px;
     flex-direction: row;
-    /* border: 1px solid; */
+    overflow: hidden;
+    border: 1px solid;
     
     /* transition: all 0.3s ease;
     background-color: var(--neutral-white);
@@ -46,17 +48,17 @@ body {
     max-width: 100%;
     max-height: 100%;
     object-fit: cover; /* 确保图片覆盖整个区域 */
-    border-radius: 20px 0 0 20px;
+    /* border-radius: 20px 0 0 20px; */
 }
 
 .text-section {
     flex: 1; /* 使文字部分占一半宽度 */
     padding: 20px;
-    background-color: #ffffff; /* 背景色，可选 */
+    background-color: yellow; /* 背景色，可选 */
     display: flex;
     /* align-items: center; */
     flex-direction: column;
-    border-radius: 0 20px 20px 0;
+    /* border-radius: 0 20px 20px 0; */
 }
 
 .text-section p {
@@ -84,6 +86,33 @@ body {
 
 .button {
     border-radius: 4px;
-    padding: 4px 12px 4px 12px;
+    /* padding: 4px 12px 4px 12px; */
+    background: var(--primary-darkcyan);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: var(--content-spacing);
+    padding: var(--content-spacing); */
+    padding: .75rem;
+    border: 0;
+    border-radius: 15px;
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-100);
+    /* background: var(--clr-primary); */
+    /* color: var(--clr-neutral-100); */
+    cursor: pointer;
+    
 }
+
+
+.button:is(:hover, :focus) {
+    background: var(--primary-dcyan);
+  }
+  
+/* @media (min-width: 600px) {
+.button {
+    padding: .75rem;
+}
+} */
 
